@@ -70,7 +70,7 @@ function TodoList() {
 
   return (
     <div className="container">
-      <h1>📝 Todo List</h1>
+      <h1>📝 Todo List 할일</h1>
 
       <div className="input-box">
         <input
