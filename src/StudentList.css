@@ -1,0 +1,22 @@
+.student-list {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.student-card {
+  background-color: #f3f9ff;
+  border-radius: 15px;
+  padding: 20px 25px;
+  width: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-card p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.badge {
+  margin-left: 5px;
+}
