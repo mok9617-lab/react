@@ -3,7 +3,7 @@ import "./RHome.css";
 
 function RHome() {
   return (
-    <div className="home">
+    <div className="Rhome">
       <div className="home-card">
         <h1>Welcome 👋</h1>
         <p>React Router 연습</p>
