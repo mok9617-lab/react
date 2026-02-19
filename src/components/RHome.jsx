@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-function Home() {
+function RHome() {
   return (
     <div className="home">
       <div className="home-card">
@@ -12,4 +12,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default RHome;

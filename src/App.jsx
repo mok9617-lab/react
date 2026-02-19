@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // lazy import — 해당 Route에 접근할 때만 컴포넌트 + CSS 로드
-const Home = lazy(() => import("./components/home"));
+import RHome from "./components/RHome";
 const Counter = lazy(() => import("./components/counter"));
 const TodoList = lazy(() => import("./components/TodoList"));
 const NotFound = lazy(() => import("./components/NotFound"));
@@ -13,7 +13,7 @@ function App() {
     <div>
       <Navigation></Navigation>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<RHome />} />
         <Route path="/*" element={<NotFound />} />
         <Route path="/Counter" element={<Counter />} />
         <Route path="/TodoList" element={<TodoList />} />
