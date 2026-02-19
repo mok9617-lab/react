@@ -1,9 +1,23 @@
-import TodoList from "./components/TodoList";
+import React, { Suspense, lazy } from "react";
+import { Routes, Route } from "react-router-dom";
+
+// lazy import — 해당 Route에 접근할 때만 컴포넌트 + CSS 로드
+const Home = lazy(() => import("./components/home"));
+const Counter = lazy(() => import("./components/counter"));
+const TodoList = lazy(() => import("./components/TodoList"));
+const NotFound = lazy(() => import("./components/NotFound"));
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <div>
-      <TodoList />
+      <Navigation></Navigation>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<NotFound />} />
+        <Route path="/Counter" element={<Counter />} />
+        <Route path="/TodoList" element={<TodoList />} />
+      </Routes>
     </div>
   );
 }

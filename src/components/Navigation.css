@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  gap: 30px;
+  padding: 15px 0;
+  background-color: #222;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #444;
+}
+
+.nav-item.active {
+  background-color: #00c896;
+  color: white;
+}
