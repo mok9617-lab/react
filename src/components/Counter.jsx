@@ -6,9 +6,9 @@ function Counter() {
   let colorClass = "";
 
   if (count > 0) {
-    colorClass = "positive";
+    colorClass = "C_positive";
   } else if (count < 0) {
-    colorClass = "negative";
+    colorClass = "C_negative";
   } else {
     colorClass = "zero";
   }
