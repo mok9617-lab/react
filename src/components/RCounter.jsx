@@ -1,4 +1,4 @@
-import "./Counter.css";
+import "./RCounter.css";
 import { useState } from "react";
 
 function Counter() {
